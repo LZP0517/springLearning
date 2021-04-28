@@ -13,6 +13,9 @@
         <module>spring1_helloworld</module>
         <module>spring2_caltools</module>
         <module>spring4_aop</module>
+        <module>spring5_selfaop_jdkproxy</module>
+        <module>spring6_selfaop_cglibproxy</module>
+        <module>spring7_tx</module>
     </modules>
 
 
@@ -26,7 +29,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -55,6 +58,11 @@
                 <groupId>javax.inject</groupId>
                 <artifactId>javax.inject</artifactId>
                 <version>1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

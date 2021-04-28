@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  servlet:
+    contextpath: /baidu
+    session:
+      timeout: 60000
+
+
+logging:
+  level:
+    com.yc: info
+    org.springframework: error
+    root: error
+  file:
+    name: logs/spring.log
+
+yc:
+  pname: lzp
+  age: 12
